@@ -1,0 +1,6 @@
+id_client,client_nom,mail,tel_client,adresse_complete,localite,solde,date_creation,actif
+1001,Sarra Barhoumi,SARRA.BARHOUMI@example.com,+216 22 345 678,12 Rue de la Liberte,Tunis,"125,50",2026-01-15,Oui
+1002,Amine Ben Salah,amine.bensalah@example.com,98 765 432,5 Avenue Habib Bourguiba,Sousse,0,15/02/2026,Oui
+1003,Meriem Trabelsi,meriem.trabelsi@example.com,+216-55-111-222,23 Rue des Jasmins,Sfax,87.3,2026/03/01,Non
+1004,Youssef Gharbi,youssef.gharbi@example.com,22.000.111,8 Rue de Marseille,Tunis,12,2026-04-10,Oui
+1005,Ines Mansour,ines.mansour@example.com,+216 29 999 888,42 Avenue de Carthage,Nabeul,350.00,05-05-2026,Oui

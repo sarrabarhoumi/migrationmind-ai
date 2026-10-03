@@ -1,0 +1,30 @@
+services:
+  backend:
+    build: ./backend
+    container_name: migrationmind-backend
+    env_file:
+      - .env
+    environment:
+      DATABASE_URL: sqlite:////app/storage/migrationmind.db
+      STORAGE_DIR: /app/storage
+      CORS_ORIGINS: '["http://localhost:8080","http://127.0.0.1:8080"]'
+    volumes:
+      - ./storage:/app/storage
+    ports:
+      - "8000:8000"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+
+  frontend:
+    build: ./frontend
+    container_name: migrationmind-frontend
+    environment:
+      API_BASE_URL: http://localhost:8000
+    depends_on:
+      backend:
+        condition: service_healthy
+    ports:
+      - "8080:80"

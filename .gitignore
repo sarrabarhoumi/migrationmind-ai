@@ -1,0 +1,14 @@
+.env.local
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+backend/.pytest_cache/
+storage/*.db
+storage/uploads/*
+!storage/uploads/.gitkeep
+storage/outputs/*
+!storage/outputs/.gitkeep
+.DS_Store
+.idea/
+.vscode/

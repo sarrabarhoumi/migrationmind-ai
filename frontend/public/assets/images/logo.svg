@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">MigrationMind AI</title>
+  <defs>
+    <linearGradient id="g" x1="8" y1="6" x2="56" y2="58" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B65F78"/>
+      <stop offset="1" stop-color="#6F3048"/>
+    </linearGradient>
+  </defs>
+  <rect x="3" y="3" width="58" height="58" rx="17" fill="url(#g)"/>
+  <path d="M18 22h11l7 10 7-10h3v20h-7V33l-3 5h-1l-6-8v12h-7V28h-4z" fill="#fff"/>
+  <circle cx="46" cy="17" r="4" fill="#F3D6A6"/>
+</svg>

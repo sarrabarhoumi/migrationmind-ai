@@ -1,0 +1,80 @@
+{
+  "entity": "customers",
+  "description": "Schéma cible CRM pour les clients migrés",
+  "fields": [
+    {
+      "name": "customer_id",
+      "label": "Identifiant client",
+      "type": "integer",
+      "required": true,
+      "unique": true,
+      "aliases": ["id_client", "client_id"]
+    },
+    {
+      "name": "first_name",
+      "label": "Prénom",
+      "type": "string",
+      "required": true,
+      "aliases": ["prenom", "client_nom"]
+    },
+    {
+      "name": "last_name",
+      "label": "Nom",
+      "type": "string",
+      "required": true,
+      "aliases": ["nom", "client_nom"]
+    },
+    {
+      "name": "email",
+      "label": "Adresse e-mail",
+      "type": "email",
+      "required": true,
+      "unique": true,
+      "aliases": ["mail", "courriel"]
+    },
+    {
+      "name": "phone",
+      "label": "Téléphone",
+      "type": "phone",
+      "required": false,
+      "aliases": ["tel_client", "telephone"]
+    },
+    {
+      "name": "street",
+      "label": "Adresse",
+      "type": "string",
+      "required": false,
+      "aliases": ["adresse_complete", "adresse"]
+    },
+    {
+      "name": "city",
+      "label": "Ville",
+      "type": "string",
+      "required": false,
+      "aliases": ["localite", "ville"]
+    },
+    {
+      "name": "balance",
+      "label": "Solde",
+      "type": "float",
+      "required": false,
+      "default": 0,
+      "aliases": ["solde", "montant_restant"]
+    },
+    {
+      "name": "created_at",
+      "label": "Date de création",
+      "type": "date",
+      "required": false,
+      "aliases": ["date_creation", "created_date"]
+    },
+    {
+      "name": "active",
+      "label": "Actif",
+      "type": "boolean",
+      "required": true,
+      "default": true,
+      "aliases": ["actif", "etat"]
+    }
+  ]
+}
