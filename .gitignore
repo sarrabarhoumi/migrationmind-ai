@@ -12,3 +12,4 @@ storage/outputs/*
 .DS_Store
 .idea/
 .vscode/
+README.md
